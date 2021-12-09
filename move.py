@@ -5,12 +5,14 @@ y = 0
 
 
 def movementStep(direction, steps):
+    """Производит разовое перемещение по коорд. плоскости"""
     global x, y
     x += dh.get(direction, 0) * steps
     y += dv.get(direction, 0) * steps
 
 
 def eternalMove():
+    """Производит многоразовое перемещение по коорд. плоскости"""
     global x, y
     x = 0
     y = 0
